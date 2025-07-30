@@ -1,5 +1,7 @@
 showDefaultText();
 
+let range = 10;
+let generatedNumbers = [];
 let secretNumber = generateRandomNumber();
 let tentatives = 1;
 
@@ -38,6 +40,14 @@ function newGame() {
 function putsHTML(tag, text) {
   let field = document.querySelector(tag);
   field.innerHTML = text;
+  if ("speechSynthesis in window") {
+    let utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "pt-BR";
+    utterance.rate = 1.2;
+    window.speechSynthesis.speak(utterance);
+  } else {
+    console.log("Web Speech API não suportada neste navegador");
+  }
 }
 
 function putsValue(tag, text) {
@@ -46,7 +56,18 @@ function putsValue(tag, text) {
 }
 
 function generateRandomNumber() {
-  return parseInt(Math.random() * 10 + 1);
+  let randomNumber = parseInt(Math.random() * range + 1);
+
+  if (generatedNumbers.length == range / 2) {
+    generatedNumbers = [];
+  }
+
+  if (generatedNumbers.includes(randomNumber)) {
+    return generateRandomNumber();
+  }
+  console.log(generatedNumbers);
+  generatedNumbers.push(randomNumber);
+  return randomNumber;
 }
 
 function cleanField() {
