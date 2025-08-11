@@ -1,18 +1,65 @@
-h1 {
-  color: white;
-  /* Adicionar mais estilos conforme necessário */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
-p {
-  color: white;
-  /* Adicionar mais estilos conforme necessário */
+
+body {
+  background-color: #000000;
+  color: #f6f6f6;
+  height: 100dvh;
 }
-button {
-  background-color: ciano;
-  color: white;
-  border: none;
-  /* Adicionar mais estilos conforme necessário */
+
+main {
+  width: 55%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  place-items: center;
+  gap: 2rem;
+  text-align: justify;
 }
-img {
-  /* Adicionar estilos para formatar a imagem */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-/* Adicionar mais estilos conforme necessário */
+
+main div h1 {
+  font-size: 36px;
+  font-family: "Krona One", sans-serif;
+  font-weight: 200;
+}
+
+main div h1 strong {
+  color: #22d4fd;
+}
+
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-wrapper a {
+  width: 230px;
+  text-align: center;
+  padding: 1.25rem 0;
+  background-color: #22d4fd;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  border-radius: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.card p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+}
