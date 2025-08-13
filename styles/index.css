@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+:root {
+  --bg-color: #000000;
+  --primary: #f6f6f6;
+  --secondary: #272727;
+  --accent: #22d4fd;
+
+  --main-font: "Krona One", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary);
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  width: 55%;
+  margin: auto;
+  height: 80%;
+  display: flex;
+  place-items: center;
+  gap: 2rem;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 36px;
+  font-family: var(--main-font);
+}
+
+header {
+  padding: 2% 0 0 15%;
+}
+
+.header_menu {
+  display: flex;
+  gap: 80px;
+}
+
+.header_menu_item {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+
+  border-bottom: 2px transparent solid;
+  padding: 0 0.5rem 0.25rem 0.5rem;
+  transition: all 550ms ease;
+}
+
+.header_menu_item:hover {
+  border-bottom: 2px var(--accent) solid;
+}
+
+.destaque {
+  color: var(--accent);
+}
+
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.socials-subtitle {
+  font-family: var(--main-font);
+}
+
+.btn-primary {
+  width: 378px;
+  text-align: center;
+  padding: 1.25rem 0;
+  background-color: transparent;
+  font-size: 24px;
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  transition: all 250ms ease-in;
+}
+
+.btn-primary:hover {
+  scale: 1.025;
+  background-color: var(--secondary);
+}
+
+.card p {
+  font-family: var(--secondary-font);
+  font-weight: 200;
+  font-size: 24px;
+}
+
+.rodape {
+  color: var(--bg-color);
+  background-color: var(--accent);
+  text-align: center;
+  font-size: 28px;
+  padding: 1.5rem 0;
+}

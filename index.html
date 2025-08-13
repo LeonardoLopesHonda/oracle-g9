@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Leonardo Honda</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="header_menu">
+        <a class="header_menu_item" href="">Home</a>
+        <a class="header_menu_item" href="/about.html">Sobre mim</a>
+      </nav>
+    </header>
     <main>
       <section class="card">
         <h1 class="title">
@@ -20,12 +25,28 @@
           a desenvolverem soluções tecnológicas. Vamos conversar?
         </p>
         <div class="btn-wrapper">
-          <a class="btn-primary" href="">Instagram</a>
-          <a class="btn-primary" href="">GitHub</a>
+          <h2 class="socials-subtitle">Acesse minhas redes:</h2>
+          <a class="btn-primary" href="">
+            <img src="./assets/instagram.png" alt="Instagram logo" />
+            Instagram
+          </a>
+          <a class="btn-primary" href="">
+            <img src="./assets/linkedin.png" alt="Linkedin logo" />
+            Linkedin
+          </a>
+          <a class="btn-primary" href="">
+            <img src="./assets/github.png" alt="Github logo" />
+            GitHub
+          </a>
         </div>
       </section>
-      <img src="./Imagem.png" alt="Foto da Leonardo Lopes Honda programando" />
+      <img
+        src="./assets/Imagem.png"
+        alt="Foto do Leonardo Lopes Honda programando"
+      />
     </main>
-    <footer></footer>
+    <footer class="rodape">
+      <p>Desenvolvido por Leonardo Lopes Honda.</p>
+    </footer>
   </body>
 </html>
